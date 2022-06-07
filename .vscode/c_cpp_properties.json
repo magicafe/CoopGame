@@ -5,7 +5,7 @@
 			"includePath": [
                 "/Users/Shared/Epic Games/UE_4.27/Engine/Source",
                 "/Users/Shared/Epic Games/UE_4.27/Engine/Source/Runtime",
-                "/Users/luodong/Workspace/CoopGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/FPSGame",
+                "/Users/luodong/Workspace/CoopGame/Intermediate/Build/Mac/x86_64/UE4Editor/Inc/CoopGame",
                 "/Users/luodong/Workspace/CoopGame/Source",
                 "/usr/local/include"
             ],

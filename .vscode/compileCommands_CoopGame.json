@@ -23,5 +23,75 @@
 		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/CoopGameGameModeBase.h",
 		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
 		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SCharacter.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SCharacter.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SExplosiveBarrel.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SExplosiveBarrel.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SHealthComponent.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SHealthComponent.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SPickupActor.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SPickupActor.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SProjectileWeapon.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SProjectileWeapon.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/STrackerBot.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/STrackerBot.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SWeapon.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/luodong/Workspace/CoopGame/Source/CoopGame/SWeapon.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/luodong/Workspace/CoopGame/.vscode/compileCommands_CoopGame/CoopGame.191.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
 	}
 ]
