@@ -32,6 +32,13 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "PickActor")
 	TSubclassOf<ASPowerupActor> PowerupClass;
 
+	ASPowerupActor* PowerupInstance;
+
+	UPROPERTY(EditDefaultsOnly, Category = "PickActor")
+	float CooldownDuration;
+
+	FTimerHandle TimerHandle_RespawnTimer;
+	
 	void Respawn();
 
 public:
