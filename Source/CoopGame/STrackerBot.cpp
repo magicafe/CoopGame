@@ -107,7 +107,7 @@ void ASTrackerBot::SelfDestruct()
 	UGameplayStatics::PlaySoundAtLocation(this, ExplodeSound, GetActorLocation());
 
 	MeshComp->SetVisibility(false, true);
-	MeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//MeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	if (HasAuthority())
 	{
