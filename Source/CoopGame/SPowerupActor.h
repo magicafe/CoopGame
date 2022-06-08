@@ -16,8 +16,6 @@ public:
 	ASPowerupActor();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
 	UPROPERTY(EditDefaultsOnly, Category="Powerups")
 	float PowerupInterval;
@@ -32,12 +30,21 @@ protected:
 	UFUNCTION()
 	void OnTickPowerup();
 
+	UPROPERTY(ReplicatedUsing=OnRep_PowerupActive)
+	bool bIsPowerupActive;
+
+	UFUNCTION()
+	void OnRep_PowerupActive();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Powerups")
+	void OnPowerupStateChanged(bool bNewIsActive);
+
 public:	
 
-	void ActivatePowerup();
+	void ActivatePowerup(AActor* ActorFor);
 
 	UFUNCTION(BlueprintImplementableEvent, Category="Powerups")
-	void OnActivated();
+	void OnActivated(AActor* ActorFor);
 
 	UFUNCTION(BlueprintImplementableEvent, Category="Powerups")
 	void OnPowerupTicked();
