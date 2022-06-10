@@ -5,12 +5,14 @@
 #include "TimerManager.h"
 #include "SHealthComponent.h"
 #include "SGameState.h"
+#include "SPlayerState.h"
 
 ASGameMode::ASGameMode()
 {
 	TimeBetweenWaves = 2.0f;
 
 	GameStateClass = ASGameState::StaticClass();
+	PlayerStateClass = ASPlayerState::StaticClass();
 
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.TickInterval = 1.0f;
@@ -23,6 +25,8 @@ void ASGameMode::StartWave()
 	NumOfBotsToSpawn = 2 * WaveCount;
 
 	GetWorldTimerManager().SetTimer(TimerHandle_BotSpawner, this, &ASGameMode::SpawnBotTimerElapsed, 1.0f, true, 0.0f);
+
+	SetWaveState(EWaveState::WaveInProgress);
 }
 
 void ASGameMode::SpawnBotTimerElapsed()
@@ -40,6 +44,8 @@ void ASGameMode::SpawnBotTimerElapsed()
 void ASGameMode::EndWave()
 {
 	GetWorldTimerManager().ClearTimer(TimerHandle_BotSpawner);
+
+	SetWaveState(EWaveState::WaitingToComplete);
 }
 
 void ASGameMode::CheckWaveState()
@@ -71,6 +77,8 @@ void ASGameMode::CheckWaveState()
 
 	if (!bIsAnyBotAlive)
 	{
+		SetWaveState(EWaveState::WaveComplte);
+
 		PrepareForNextWave();
 	}
 }
@@ -78,6 +86,8 @@ void ASGameMode::CheckWaveState()
 void ASGameMode::PrepareForNextWave()
 {
 	GetWorldTimerManager().SetTimer(TimerHandle_NextWaveStart, this, &ASGameMode::StartWave, TimeBetweenWaves, false);
+
+	SetWaveState(EWaveState::WaitingToStart);
 }
 
 void ASGameMode::CheckAnyPlayerAlive()
@@ -99,9 +109,23 @@ void ASGameMode::CheckAnyPlayerAlive()
 	GameOver();
 }
 
+void ASGameMode::RestartDeadPlayers()
+{
+	for (FConstPlayerControllerIterator it = GetWorld()->GetPlayerControllerIterator(); it; it++)
+	{
+		APlayerController* PC = it->Get();
+		if (PC && PC->GetPawn() == nullptr)
+		{
+			RestartPlayer(PC);
+		}
+	}
+}
+
 void ASGameMode::GameOver()
 {
 	EndWave();
+
+	SetWaveState(EWaveState::GameOver);
 
 	UE_LOG(LogTemp, Log, TEXT("Game Over. Player Died."));
 }
@@ -111,7 +135,7 @@ void ASGameMode::SetWaveState(EWaveState NewState)
 	ASGameState* GS = GetGameState<ASGameState>();
 	if (ensureAlways(GS))
 	{
-		GS->WaveState = NewState;
+		GS->SetWaveState(NewState);
 	}
 }
 
@@ -129,4 +153,6 @@ void ASGameMode::Tick(float DeltaSeconds)
 	CheckWaveState();
 
 	CheckAnyPlayerAlive();
+
+	RestartDeadPlayers();
 }
